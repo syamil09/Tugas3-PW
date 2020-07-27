@@ -36,7 +36,7 @@ $syamil7 = $_POST['syamil7'] ?? '';
 				    </tr>
 				    <tr>
 				      <td><b>Name</b></td>
-				      <td><?= $syamil2.' '.$syamil2 ?></td>
+				      <td><?= $syamil2.' '.$syamil3 ?></td>
 				    </tr>
 				    <tr>
 				      <td><b>Phone</b></td>
