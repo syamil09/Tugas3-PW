@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Reunion Form</title>
+	<link rel="stylesheet" href="bs.min.css">
+	<style>
+		body{
+			background: #321756;
+			color: #fff;
+		}
+		hr {
+			background: #fff;
+		}
+		small {
+			color: #fff;
+		}
+		label, legend {
+			margin-right: 20px;
+		}
+		.header-form h1 {
+			font-size: 60px;
+		}
+		.header-form p {
+			color: #EFEFEF;
+		}
+		#date {
+			color: #F3D130;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row mt-5">
+			<div class="col-md-12 text-center header-form">
+				<h1>Form Reunion</h1>
+				<p>Time to rekindle some good ol' memories! see you soon!</p>
+				<hr>
+				<p id="date">Date: <b>01-05-2020</b> | Time: <b>6pm onwards</b> | address: <b>our garage</b></p>
+			</div>
+			<div class="col-md-12">
+				<form method="POST" action="syamil2.php">
+
+				  	<fieldset class="form-group">
+					    <div class="row">
+					      	<legend class="col-form-label col-sm-3 pt-0 text-md-right">Would you like join to us?</legend>
+					      	<div class="col-sm-8">
+						        <div class="form-check form-check-inline">
+						          <input class="form-check-input" type="radio" name="syamil1" id="yes" value="Yes" required>
+						          <label class="form-check-label" for="yes">
+						            Yes
+						          </label>
+						        </div>
+						        <div class="form-check form-check-inline">
+						          <input class="form-check-input" type="radio" name="syamil1" id="no" value="No">
+						          <label class="form-check-label" for="no">
+						            No
+						          </label>
+						        </div>
+					      </div>
+					    </div>
+				  	</fieldset>
+					
+					<div class="form-group row">
+					    <label for="name" class="col-sm-3 col-form-label text-md-right">Name</label>
+					    <div class="col-4">
+					      <input type="text" class="form-control" id="name" name="syamil2" required>
+					      <small class="form-text">First</small>
+					    </div>
+					    <div class="col-4">
+					      <input type="text" class="form-control" name="syamil3">
+					      <small class="form-text">Last</small>
+					    </div>
+				  	</div>
+
+				  	<div class="form-group row">
+					    <label for="phone" class="col-sm-3 col-form-label text-md-right">Phone</label>
+					    <div class="col-sm-8">
+					      <input type="text" class="form-control" id="phone" name="syamil4" required>
+					    </div>
+				  	</div>
+					
+					<fieldset class="form-group">
+					    <div class="row">
+					      	<legend class="col-form-label col-sm-3 pt-0 text-md-right">Your meal preference?</legend>
+					      	<div class="col-sm-8">
+						        <div class="form-check form-check-inline">
+						          <input class="form-check-input" type="radio" name="syamil5" id="veg" value="Vegetarian" required>
+						          <label class="form-check-label" for="veg">
+						            Vegetarian
+						          </label>
+						        </div>
+						        <div class="form-check form-check-inline">
+						          <input class="form-check-input" type="radio" name="syamil5" id="non-veg" value="Non-vegetarian">
+						          <label class="form-check-label" for="non-veg">
+						            Non-vegetarian
+						          </label>
+						        </div>
+					      </div>
+					    </div>
+				  	</fieldset>
+
+				  	<div class="form-group row">
+				    	<label class="col-sm-3 text-md-right">What kind of game are you interested in?</label>
+					    <div class="col-sm-8">
+					      <div class="form-check form-check-inline">
+					        <input class="form-check-input" type="checkbox" id="game-indoor" name="syamil6[]" value="Indoor">
+					        <label class="form-check-label" for="game-indoor">
+					          Indoor
+					        </label>
+					      </div>
+
+					      <div class="form-check form-check-inline">
+					        <input class="form-check-input" type="checkbox" id="game-board" name="syamil6[]" value="Board">
+					        <label class="form-check-label" for="game-board">
+					          Board
+					        </label>
+					      </div>
+
+					      <div class="form-check form-check-inline">
+					        <input class="form-check-input" type="checkbox" id="game-ball" name="syamil6[]" value="Ball Games">
+					        <label class="form-check-label" for="game-ball">
+					          Ball Games
+					        </label>
+					      </div>
+
+					      <div class="form-check form-check-inline">
+					        <input class="form-check-input" type="checkbox" id="game-outdoor" name="syamil6[]" value="Outdoor">
+					        <label class="form-check-label" for="game-outdoor">
+					          Outdoor
+					        </label>
+					      </div>
+
+					    </div>
+				  	</div>
+					
+					<div class="form-group row">
+					    <label for="inputEmail3" class="col-sm-3 col-form-label text-md-right">Do you have any question?</label>
+					    <div class="col-sm-8">
+					      <textarea class="form-control" name="syamil7"></textarea>
+					    </div>
+				  	</div>
+				  <div class="form-group row">
+				    <div class="col-sm-12 text-center">
+				      <button type="submit" class="btn btn-outline-warning text-white" name="submit">Submit</button>
+				    </div>
+				  </div>
+				</form>
+			</div>
+        </div>
+	</div>
+</body>
+</html>
